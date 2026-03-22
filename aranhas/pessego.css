@@ -4,3 +4,34 @@
     bottom: 0;
     right: 0;
 }
+
+.item{
+    background-color: rgb(195, 197, 195);
+}
+
+#principal{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    >li{
+        /* list-style: none; */
+    }
+    >li::before{
+        content: '';
+        /* display: inline-block; */
+        background-image: url(https://i.pinimg.com/474x/90/a7/48/90a7484e1421308ab4b3e47f4b2910b1.jpg);
+        width: 20px;
+        height: 20px;
+    }
+    >li > a{
+        text-decoration: none;
+    }
+}
